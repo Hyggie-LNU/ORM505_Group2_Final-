@@ -1,0 +1,44 @@
+# OS
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*~
+
+# Editors / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swx
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+*.rej
+
+# Secrets / local env
+.env
+.env.*
+
+# Python
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# Flask / local database (created automatically when the server runs)
+instance/
+*.db
+*.sqlite
+*.sqlite3
+.flask_session/
