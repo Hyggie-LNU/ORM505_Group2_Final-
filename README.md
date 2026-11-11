@@ -31,9 +31,18 @@ MTAgpFinal/
 
 ## Local Deployment
 
-### 1. Start the backend
+### 1. Clone the repository
 
-On the host computer:
+In your preferred local working directory, run:
+
+```bash
+git clone https://github.com/Hyggie-LNU/ORM505_Group2_Final-.git
+cd ORM505_Group2_Final-
+```
+
+### 2. Start the backend
+
+Inside the `ORM505_Group2_Final-` folder, run:
 
 ```bash
 cd backend
@@ -57,14 +66,14 @@ http://10.9.139.239:5000
 
 Keep this process running while the mobile application is in use. On first launch, SQLite storage is created under `backend/instance/` (ignored by Git).
 
-### 2. Configure and build the mobile client
+### 3. Configure and build the mobile client
 
 1. Open the [MIT App Inventor](https://appinventor.mit.edu/) web IDE and **import** `frontend/FinalVersion.aia` only. A separate import of `com.websocketext.aix` is unnecessary for normal use; that file is kept in the repository solely as a reference copy of the embedded extension.
 2. In the **Register** screen, open the **Blocks** editor and set the global variable `backendurl` to the LAN URL shown in the backend console (e.g. `http://10.9.139.239:5000`). Do **not** use `http://127.0.0.1:5000` or `localhost`: on the phone those addresses refer to the device itself, not the host running Flask.
 3. Build the project as an **APK** and install it on the Android device.
 4. Ensure the phone and the host remain on the same Wi-Fi (or equivalent LAN) and that `python app.py` continues to run.
 
-### 3. Suggested verification path
+### 4. Suggested verification path
 
 1. Register and sign in on two devices (or two accounts).
 2. Search by username, send a friend request, and accept it on the other account.
@@ -113,9 +122,18 @@ MTAgpFinal/
 
 ## 本地部署
 
-### 1. 启动后端
+### 1. 克隆仓库
 
-在主机上执行：
+在你的电脑工程目录下执行
+
+```bash
+git clone https://github.com/Hyggie-LNU/ORM505_Group2_Final-.git
+cd ORM505_Group2_Final-
+```
+
+### 2. 启动后端
+
+在ORM505_Group2_Final-文件夹中执行：
 
 ```bash
 cd backend
@@ -139,14 +157,14 @@ http://10.9.139.239:5000
 
 手机端使用期间请保持该进程持续运行。首次启动时，SQLite 数据库会自动生成于 `backend/instance/`（该目录已被 Git 忽略）。
 
-### 2. 配置并打包手机端
+### 3. 配置并打包手机端
 
 1. 打开 [MIT App Inventor](https://appinventor.mit.edu/) 网页版 IDE，**仅导入** `frontend/FinalVersion.aia`。日常使用无需单独导入 `com.websocketext.aix`；该文件仅作为已嵌入扩展的引用副本保留在仓库中。
 2. 进入 **Register** 屏幕，打开 **Blocks** 编辑器，将全局变量 `backendurl` 设为后端控制台显示的局域网地址（例如 `http://10.9.139.239:5000`）。**不要**使用 `http://127.0.0.1:5000` 或 `localhost`：在手机上，这些地址指向设备自身，而非运行 Flask 的主机。
 3. 将工程打包为 **APK**，并安装到 Android 设备。
 4. 确保手机与主机处于同一 Wi-Fi（或等效局域网），且 `python app.py` 持续运行。
 
-### 3. 建议验证流程
+### 4. 建议验证流程
 
 1. 在两台设备（或两个账号）上分别注册并登录。
 2. 按用户名搜索，发送好友申请，并在另一账号上同意。
